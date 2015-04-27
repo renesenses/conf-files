@@ -1,0 +1,22 @@
+[user]
+name = bertrand
+email = clech@eurecom.fr
+[color]
+diff = auto
+status = auto
+branch = auto
+[alias]
+st = status
+ci = commit
+co = checkout
+fp = format-patch
+lg = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an %cr)%Creset' --abbrev-commit --date=relative
+[core]
+pager = cat
+	excludesfile = /Users/LochNessIT/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/_EVALUATION/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
